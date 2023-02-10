@@ -1,103 +1,149 @@
 .ideapage {
-   position: relative;
-   width: 100%;
+	position: relative;
+	width: 100%;
 }
 .formarea {
-   width: 600px;
-   margin: 0 auto;
-   padding: 150px 0;
+	width: 600px;
+	margin: 0 auto;
+	padding: 150px 0;
 }
 .inputgroup {
-   width: 600px;
-   position: relative;
-   padding-bottom: 30px;
+	width: 600px;
+	position: relative;
+	padding-bottom: 30px;
 }
 .inputgroup label {
-   font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 .dropdown {
-   text-transform: capitalize;
+	text-transform: capitalize;
 }
 .dropdown {
-   background-color: var(--white);
-   padding: 15px 25px;
-   position: relative;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   cursor: pointer;
-   border: 0;
-   border-radius: 10px;
-   font-weight: 600;
-   font-size: 1.2rem;
-   margin-top: 10px;
+	background-color: var(--white);
+	padding: 15px 25px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+	border: 0;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin-top: 10px;
 }
 .dropdownitems {
-   background-color: var(--white);
-   width: 100%;
-   position: absolute;
-   list-style: none;
-   border-radius: 0 0 15px 15px;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   z-index: 2;
+	background-color: var(--white);
+	width: 100%;
+	position: absolute;
+	list-style: none;
+	border-radius: 0 0 15px 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index: 2;
 }
 .dropdownitems li {
-   padding: 15px 25px;
-   font-size: 1.2rem;
-   transition: 200ms ease-in-out;
-   cursor: pointer;
+	padding: 15px 25px;
+	font-size: 1.2rem;
+	transition: 200ms ease-in-out;
+	cursor: pointer;
 }
 .dropdownitems li:last-child {
-   border: 0;
-   border-radius: 0 0 10px 10px;
+	border: 0;
+	border-radius: 0 0 10px 10px;
 }
 .dropdownitems li:hover {
-   background-color: var(--hover);
+	background-color: var(--hover);
 }
 .numberinput {
-   position: relative;
-   margin-top: 10px;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+	margin-top: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: 0;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--white);
+	padding: 15px 25px;
+}
+.numberinput input {
+	background-color: var(--white);
+	border: 0;
+	font-size: 1.2rem;
+	width: 300px;
+	font-weight: 600;
+}
+.numberinput span {
+	font-size: 1.2rem;
+}
+.numberinput input:focus {
+	outline: none;
+	border: none;
+}
+.submit {
+	width: 100%;
+	padding-top: 50px;
+}
+.submit button {
+	background-color: var(--main);
+	color: var(--white);
+	width: 100%;
+	border: 0;
+	font-size: 1.2rem;
+	padding: 15px 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 200ms ease-in-out;
+}
+.submit button:hover {
+	background-color: var(--main-darker);
+}
+
+.interestinputarea {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   background-color: var(--white);
+   font-size: 1.2rem;
+   padding: 15px 15px;
+	margin-top: 10px;
    border: 0;
    border-radius: 10px;
    display: flex;
    align-items: center;
-   justify-content: space-between;
-   background-color: var(--white);
-   padding: 15px 25px;
+   flex-wrap: wrap;
+   gap: 7px;
+   
 }
-.numberinput input {
-   background-color: var(--white);
+.tagitem {
+   background-color: var(--hover);
+   width: fit-content;
+   padding: 5px 8px;
+   display: inline-block;
    border: 0;
+
+   border-radius: 5px;
+}
+.tagname {
    font-size: 1.2rem;
-   width: max-content;
-   font-weight: 600;
+   padding-left: 5px;
 }
-.numberinput span {
-   font-size: 1.2rem;
+.tagicon {
+   padding-right: 3px;
+   padding-left: 5px;
+   cursor: pointer;   
 }
-.numberinput input:focus {
-   outline: none;
-   border: none;
+.interestinput {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 0;
+  flex-grow: 1;
+  width: auto;
+  padding: 5px 8px;
 }
-.submit {
-   width: 100%;
-   padding-top: 50px;
-}
-.submit button {
-   background-color: var(--main);
-   color: var(--white);
-   width: 100%;
+.interestinput:focus {
    border: 0;
-   font-size: 1.2rem;
-   padding: 15px 25px;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   border-radius: 10px;
-   font-weight: 700;
-   cursor: pointer;
-   transition: 200ms ease-in-out;
-}
-.submit button:hover {
-   background-color: var(--main-darker);
+   outline: 0;
 }
