@@ -75,7 +75,7 @@ export default function Home() {
 			const body = {
 				gender: selectedGender,
 				age: ageValue,
-				interest: tags,
+				interests: tags,
 			};
 			const res = await fetch('/api/getideas', {
 				method: 'POST',
@@ -84,6 +84,8 @@ export default function Home() {
 				},
 				body: JSON.stringify(body),
 			});
+			console.log(res);
+			setIsLoading(false);
 		}
 	};
 
