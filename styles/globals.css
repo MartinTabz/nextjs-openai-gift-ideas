@@ -5,6 +5,7 @@
   --main: #8f1a28;
   --main-lighter: #daa2a2;
   --hover: #e2e2e2;
+  --desc: #808080;
 }
 body {
   background-color: var(--background);
