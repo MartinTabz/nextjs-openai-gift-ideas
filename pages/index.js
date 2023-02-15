@@ -7,6 +7,8 @@ import { HiX } from 'react-icons/hi';
 
 export default function Home() {
 	const [isLoading, setIsLoading] = useState(false);
+	const [gotResults, setGotResults] = useState(false);
+	const [ideasValue, setIdeasValue] = useState('');
 
 	// Gender input and selection box
 	const [selectedGender, setSelectedGender] = useState('');
@@ -84,7 +86,10 @@ export default function Home() {
 				},
 				body: JSON.stringify(body),
 			});
-			console.log(res);
+			const suggestions = await res.json();
+			console.log(suggestions.result);
+			setIdeasValue(JSON.parse(suggestions.result));
+			setGotResults(true);
 			setIsLoading(false);
 		}
 	};
@@ -96,6 +101,10 @@ export default function Home() {
 			</Head>
 			{isLoading ? (
 				<Loading />
+			) : gotResults ? (
+				<section> {ideasValue.map((item, index) => (
+					<h2 key={index}>{item}</h2>
+				 ))}</section>
 			) : (
 				<section className={styles.ideapage}>
 					<div className={styles.formarea}>
